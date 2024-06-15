@@ -1,0 +1,46 @@
+.footer {
+    padding: 40px 75px;
+    background-color: rgba(128, 128, 128, 0.2);
+}
+
+.footer-restaurant-info h3 {
+    color: orangered;
+}
+
+.footer-restaurant-info p {
+    font-size: 15px;
+}
+
+.footer-social-icons {
+    color: orangered;
+    font-size: 22px;
+}
+
+.footer-menu-section .footer-menu {
+    padding: 0;
+}
+
+.footer-menu-section .footer-menu li {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 10px;
+}
+
+.footer-menu-section h5,
+.footer-restaurant-contact h5 {
+    color: orangered;
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 750px) {
+    .footer-columns {
+        margin: 15px 0px;
+    }
+}
+
+
+/* Router Link Cursor Type */
+h3[routerLink],
+li[routerLink] {
+    cursor: pointer;
+}

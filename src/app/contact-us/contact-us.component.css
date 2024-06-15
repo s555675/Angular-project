@@ -1,0 +1,36 @@
+.contact-us-container {
+    margin: 40px 80px;
+}
+
+.contact-us-container h2 {
+    text-align: center;
+    color: orangered;
+}
+
+.contact-us-form {
+    padding: 20px;
+    border: 1px solid lightgray;
+    border-radius: 25px;
+}
+
+.contact-us-form .row,
+.col {
+    margin-bottom: 12px;
+}
+
+.contact-us-form .form-label {
+    font-size: 13px;
+}
+
+.contact-us-form .form-control:focus {
+    border: 1px solid orangered;
+    box-shadow: none;
+}
+
+.contact-us-form .btn {
+    display: block;
+    margin: 0 auto;
+    width: 25%;
+    background-color: orangered;
+    color: white;
+}

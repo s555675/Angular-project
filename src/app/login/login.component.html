@@ -1,0 +1,53 @@
+<div class="login-container">
+    <a class="navbar-brand" routerLink="/home">
+        <span></span>
+        Mei Wei
+    </a>
+    <div class="bg-img">
+        <img src="../../assets/login-register.png" alt="">
+    </div>
+    <div class="form-container">
+        <div class="logo">
+            <img src="../../assets/logo.png" alt="">
+        </div>
+        <div class="headings">
+            <p>Welcome Back!!</p>
+            <span>Login with your email address and password</span>
+        </div>
+        <form>
+            <div class="other-login">
+                <button class="btn btn-md icons">
+                    <i class=" bi bi-google"></i>
+                </button>
+                <button class="btn btn-md icons">
+                    <i class="bi bi-facebook"></i>
+                </button>
+                <button class="btn btn-md icons">
+                    <i class="bi bi-apple"></i>
+                </button>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label class="form-label">Email Address</label>
+                        <input class="form-control" type="email" name="email" autocomplete="off">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label class="form-label">Password</label>
+                        <input class="form-control" type="password" name="email" autocomplete="off">
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-md login-btn">Login</button>
+            <p class="register-tag" routerLink="/sign-up">
+                Didn't have an account?
+                <span>Register</span>
+            </p>
+        </form>
+    </div>
+</div>
+<router-outlet></router-outlet>

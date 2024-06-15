@@ -1,0 +1,22 @@
+.carousel-section {
+    margin: 40px 40px 50px;
+}
+
+.scroll-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none;
+}
+
+.scroll-content {
+    white-space: nowrap;
+}
+
+.scroll-content .item {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.scroll-content .item img {
+    width: 200px;
+}

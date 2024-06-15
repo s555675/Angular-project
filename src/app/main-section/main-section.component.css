@@ -1,0 +1,21 @@
+.main-section {
+    height: 600px;
+    background-image: url('../../assets/dish.jpeg');
+    border-bottom: 15px solid rgba(128, 128, 128, 0.5);
+}
+
+.main-section .intro-line {
+    padding: 15px;
+    margin: 0 40px;
+    font-size: 70px;
+}
+
+.main-section .intro-line span {
+    color: orangered;
+}
+
+@media screen and (max-width: 500px) {
+    .main-section .intro-line {
+        font-size: 50px;
+    }
+}

@@ -1,0 +1,92 @@
+.restaurant-intro {
+    padding: 30px;
+    margin: 20px 40px;
+}
+
+.restaurant-intro .welcome {
+    margin-top: 120px;
+}
+
+.restaurant-intro .welcome h3 {
+    font-size: 45px;
+    color: orangered;
+}
+
+.restaurant-intro .welcome p {
+    font-size: 18px;
+    color: yellowgreen;
+}
+
+.restaurant-intro .info {
+    margin-left: 20px;
+    text-align: justify;
+}
+
+.restaurant-intro .info p {
+    margin-top: 40px;
+}
+
+.restaurant-intro .info span {
+    font-weight: bold;
+}
+
+.restaurant-intro .info img {
+    border: 8px solid rgba(128, 128, 128, 0.5);
+    width: 300px;
+    height: 400px;
+}
+
+.restaurant-details {
+    padding: 30px;
+    margin: 40px 40px;
+}
+
+.restaurant-details .open-img img {
+    border: 8px solid rgba(128, 128, 128, 0.5);
+}
+
+.restaurant-details .opening-hours {
+    text-align: center;
+}
+
+.restaurant-details .opening-hours h3 {
+    font-size: 45px;
+    color: orangered;
+}
+
+.restaurant-details .opening-hours p {
+    font-size: 18px;
+    color: yellowgreen;
+}
+
+.restaurant-details .opening-hours .info {
+    margin-top: 20px;
+}
+
+.restaurant-details .opening-hours .info span {
+    font-weight: bold;
+}
+
+@media screen and (min-width: 300px) and (max-width: 768px) {
+    .restaurant-intro .info {
+        margin-top: 30px;
+        margin-left: 0px;
+    }
+
+    .restaurant-intro .info img {
+        margin: 20px 0;
+        width: 250px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200) {
+    .restaurant-intro .info {
+        margin-top: 30px;
+        margin-left: 0px;
+    }
+
+    .restaurant-intro .info img {
+        margin: 20px 60px 0;
+        width: 500px;
+    }
+}

@@ -1,0 +1,38 @@
+<!-- Menu Card -->
+<div class="menu-container">
+    <div class="row categories">
+        <div class="col-2"></div>
+        <div class="col-lg-8 col-md-12">
+            <div class="d-flex ms-4 scroll-container">
+                <div class="scroll-content">
+                    <div *ngFor="let item of menuObject.categories" class="item">
+                        <p>{{item.strCategory}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-2"></div>
+    </div>
+    <div class="row menu">
+        <div class="col-2"></div>
+        <div class="col-lg-8 col-md-12 menu-card">
+            <h3>MENU CARD</h3>
+            <div *ngFor="let item of menuObject.categories" class="menu-item">
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-7 dish-details">
+                        <h6 class="title">{{item.strCategory}}</h6>
+                        <p class="dish-description">
+                            This is a description text for the dish, displayed at the bottom of it's name.
+                        </p>
+                    </div>
+                    <div class="col-2 dish-price">
+                        <h6>$ {{item.price}}</h6>
+                    </div>
+                    <div class="col-2"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-2"></div>
+    </div>
+</div>

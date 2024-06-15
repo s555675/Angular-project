@@ -1,0 +1,176 @@
+<div class="feedback-container">
+    <h2>Restaurant Feedback Form</h2>
+    <p>Please help us improve our restaurant services by filling in our feedback form. Thank you!</p>
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-lg-8">
+            <form class="feedback-form" [formGroup]="feedbackForm" (ngSubmit)="onSubmit()">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="form-group">
+                            <label class="form-label">First Name</label>
+                            <input class="form-control" type="text" formControlName="fname" autocomplete="off" required>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="form-group">
+                            <label class="form-label">Last Name</label>
+                            <input class="form-control" type="text" formControlName="lname" autocomplete="off" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label class="form-label">Email</label>
+                            <input class="form-control" type="email" formControlName="email" autocomplete="off"
+                                required>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label class="form-label">Day Visited</label>
+                            <input class="form-control" type="date" name="day-visited" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label class="form-label">Time Visited</label>
+                            <input class="form-control" type="time" name="day-visited" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label class="form-label">Dine In / Take Out</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" value="">
+                                <label class="form-check-label">
+                                    Dine In
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" value="">
+                                <label class="form-check-label">
+                                    Take Out
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label class="form-label">Age</label>
+                            <select class="form-select" name="age">
+                                <option selected value="Please Select*">Please Select*</option>
+                                <option value="under 13">Under 13</option>
+                                <option value="13 - 17">13 - 17</option>
+                                <option value="18 - 24">18 - 24</option>
+                                <option value="25 - 34">25 - 34</option>
+                                <option value="35 - 44">35 - 44</option>
+                                <option value="45 - 54">45 - 54</option>
+                                <option value="55 or older">55 or older</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <table class="feedback-table">
+                            <tr>
+                                <th style="width: 25%;"></th>
+                                <th>Amazing</th>
+                                <th>Good</th>
+                                <th>Decent</th>
+                                <th>Disappointing</th>
+                            </tr>
+                            <tr>
+                                <td>Food Quality</td>
+                                <td>
+                                    <input class="form-check-input" type="radio" name="food_quality" value="">
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" name="food_quality" value="">
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" name="food_quality" value="">
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" name="food_quality" value="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Overall Service Quality</td>
+                                <td>
+                                    <input class="form-check-input" type="radio" name="service_quality" value="">
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" name="service_quality" value="">
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" name="service_quality" value="">
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" name="service_quality" value="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Speed of Service</td>
+                                <td>
+                                    <input class="form-check-input" type="radio" name="speed_of_service" value="">
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" name="speed_of_service" value="">
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" name="speed_of_service" value="">
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" name="speed_of_service" value="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Price</td>
+                                <td>
+                                    <input class="form-check-input" type="radio" name="price" value="">
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" name="price" value="">
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" name="price" value="">
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" name="price" value="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Overall Experience</td>
+                                <td>
+                                    <input class="form-check-input" type="radio" name="overall_experience" value="">
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" name="overall_experience" value="">
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" name="overall_experience" value="">
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" name="overall_experience" value="">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <button class="btn btn-md" type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="col-2"></div>
+    </div>
+</div>

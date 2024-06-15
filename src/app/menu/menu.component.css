@@ -1,0 +1,64 @@
+.menu-container {
+    margin: 30px 40px 70px;
+}
+
+.categories,
+.menu {
+    margin: 15px;
+}
+
+.scroll-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none;
+}
+
+.scroll-content {
+    white-space: nowrap;
+}
+
+.scroll-content .item {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.scroll-content .item p {
+    color: lightcoral;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.scroll-content .item p :hover {
+    color: green;
+}
+
+.menu-card {
+    border: 1px solid lightgray;
+}
+
+.menu-card h3 {
+    text-align: center;
+    color: orangered;
+}
+
+.menu-card h3 {
+    margin-top: 25px;
+}
+
+
+.menu-card .menu-item .dish-details,
+.dish-price {
+    padding-left: 0px;
+    margin-top: 15px;
+}
+
+.menu-card .menu-item .dish-details p {
+    font-size: 10px;
+    color: gray;
+}
+
+.menu-card .menu-item .dish-price {
+    text-align: center;
+}
+
+@media screen and (max-width: 550px) {}

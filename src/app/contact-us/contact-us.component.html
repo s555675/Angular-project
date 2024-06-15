@@ -1,0 +1,51 @@
+<div class="contact-us-container">
+    <h2>Get In Touch</h2>
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-lg-8">
+            <form class="contact-us-form" [formGroup]="contactUsForm" (ngSubmit)="onSubmit()">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="form-group">
+                            <label class="form-label">First Name</label>
+                            <input class="form-control" type="text" formControlName="fname" autocomplete="off" required>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="form-group">
+                            <label class="form-label">Last Name</label>
+                            <input class="form-control" type="text" formControlName="lname" autocomplete="off" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="form-group">
+                            <label class="form-label">Email</label>
+                            <input class="form-control" type="email" formControlName="email" autocomplete="off"
+                                required>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="form-group">
+                            <label class="form-label">Mobile</label>
+                            <input class="form-control" type="text" formControlName="mobile" maxlength="10"
+                                autocomplete="off" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label class="form-label">Message</label>
+                            <textarea class="form-control" formControlName="message" rows="5" autocomplete="off"
+                                required></textarea>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-md" type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="col-2"></div>
+    </div>
+</div>

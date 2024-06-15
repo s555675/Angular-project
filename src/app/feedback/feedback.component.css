@@ -1,0 +1,77 @@
+.feedback-container {
+    margin: 40px 80px;
+}
+
+.feedback-container h2 {
+    text-align: center;
+    color: orangered;
+}
+
+.feedback-container p {
+    text-align: center;
+    color: rgb(255, 69, 0, 0.7);
+}
+
+.feedback-form {
+    padding: 20px;
+    border: 1px solid lightgray;
+    border-radius: 25px;
+}
+
+.feedback-form .row,
+.col {
+    margin-bottom: 12px;
+}
+
+.feedback-form .form-label {
+    font-size: 13px;
+}
+
+
+.feedback-form .form-control:focus,
+.form-select:focus {
+    border: 1px solid orangered;
+    box-shadow: none;
+}
+
+.form-check-input:checked {
+    background-color: orangered;
+    border-color: orangered;
+    box-shadow: none;
+}
+
+.feedback-form .btn {
+    display: block;
+    margin: 0 auto;
+    width: 25%;
+    background-color: orangered;
+    color: white;
+}
+
+.feedback-container .feedback-form .feedback-table {
+    margin: 12px;
+    width: 100%;
+}
+
+.feedback-container .feedback-form .form-check-label {
+    font-size: 15px;
+}
+
+.feedback-form .feedback-table td:not(:first-child),
+th:not(:first-child) {
+    text-align: center;
+}
+
+.feedback-form .feedback-table tr:first-child,
+td:first-child {
+    font-size: 13px;
+}
+
+/* Hide the placeholder for date and time fields */
+input[type=date]:required:invalid::-webkit-datetime-edit {
+    color: transparent;
+}
+
+input[type=time]:required:invalid::-webkit-datetime-edit {
+    color: transparent;
+}
